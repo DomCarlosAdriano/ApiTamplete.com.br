@@ -1,0 +1,109 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  max-width: 1850px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  display: flex;
+  text-align: center;
+  width: fit-content;
+}
+
+.hero-image img {
+  width: 30vw;
+  height: auto;
+  border-radius: 15px;
+}
+
+.hero-content {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.features-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.features-list li::before {
+  content: "✅";
+  margin-right: 0.6rem;
+}
+
+.cta-button-hero {
+  padding: 0.9rem 2rem;
+  background-color: #1e90ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-hero:hover {
+  background-color: #0f78d0;
+}
+
+.note {
+  font-size: 1rem;
+  color: #333;
+}
+
+.note strong {
+  font-weight: 700;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p,
+  .features-list li,
+  .note {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
