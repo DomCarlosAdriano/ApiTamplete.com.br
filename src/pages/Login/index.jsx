@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { supabase } from './../../supabaseClient';
-import "./Login.css";
+import styles from "./Login.module.css";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-   const [msg, setMsg] = useState("");
+  const [msg, setMsg] = useState("");
   const [erro, setErro] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
-   
+
     setErro("");
     setMsg("");
 
@@ -24,16 +24,13 @@ function Login() {
     } else {
       setMsg("✅ Login realizado com sucesso!");
       console.log("Sessão:", data.session);
-
-      // Redirecionar para a home (opcional)
       window.location.href = "/home";
     }
-    
   };
 
   return (
-    <div className="login-container">
-      <form className="login-form" onSubmit={handleLogin}>
+    <div className={styles.loginContainer}>
+      <form className={styles.loginForm} onSubmit={handleLogin}>
         <h2>Login</h2>
 
         <label htmlFor="email">Email</label>
@@ -58,7 +55,7 @@ function Login() {
 
         <button type="submit">Entrar</button>
 
-        <p className="link-text">
+        <p className={styles.linkText}>
           Não tem uma conta? <a href="/register">Cadastre-se</a>
         </p>
       </form>

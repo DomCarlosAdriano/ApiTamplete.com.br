@@ -1,4 +1,4 @@
-.beneficios-section {
+.beneficiosSection {
   padding: 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -6,19 +6,19 @@
   margin-top: 8rem;
 }
 
-.beneficios-title {
+.beneficiosTitle {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-.beneficios-subtitle {
+.beneficiosSubtitle {
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 2rem;
 }
 
-.beneficios-grid {
+.beneficiosGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
@@ -37,7 +37,7 @@
   transform: translateY(-4px);
 }
 
-.beneficio-icon {
+.beneficioIcon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }

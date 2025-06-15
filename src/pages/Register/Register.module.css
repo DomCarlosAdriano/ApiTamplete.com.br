@@ -1,6 +1,4 @@
-/* Login.css */
-
-.login-container {
+.registerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,28 +7,29 @@
   padding: 20px;
 }
 
-.login-form {
+.registerForm {
   background-color: white;
   padding: 40px;
   border-radius: 10px;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.login-form h2 {
+.registerForm h2 {
   margin-bottom: 20px;
   color: #111827;
 }
 
-.login-form label {
+.registerForm label {
   display: block;
   margin-bottom: 6px;
   color: #374151;
   font-weight: 500;
 }
 
-.login-form input {
+.registerForm input {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
@@ -39,12 +38,12 @@
   font-size: 14px;
 }
 
-.login-form input:focus {
+.registerForm input:focus {
   border-color: #4f46e5;
   outline: none;
 }
 
-.login-form button {
+.registerForm button {
   width: 100%;
   padding: 12px;
   background-color: #4f46e5;
@@ -56,18 +55,28 @@
   transition: background-color 0.2s;
 }
 
-.login-form button:hover {
+.registerForm button:hover {
   background-color: #4338ca;
 }
 
-.link-text {
+.linkText {
   text-align: center;
   margin-top: 15px;
   font-size: 14px;
   color: #6b7280;
 }
 
-.link-text a {
+.linkText a {
   color: #4f46e5;
   text-decoration: none;
+}
+
+.errorMessage {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: center;
 }

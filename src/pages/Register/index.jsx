@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { supabase } from './../../supabaseClient'; // Ajuste o caminho conforme necessário
-import "./Register.css";
+import { supabase } from './../../supabaseClient';
+import styles from "./Register.module.css";
 
 function Register() {
   const [nome, setNome] = useState("");
@@ -22,7 +22,7 @@ function Register() {
     console.log("Email:", email);
     console.log("Senha:", senha);
 
-     const { data, error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password: senha,
     });
@@ -31,17 +31,15 @@ function Register() {
       console.log('Erro: ' + error.message);
     } else {
       console.log('✅ Registro criado! Verifique seu e-mail.');
-      
     }
-
   };
 
   return (
-    <div className="register-container">
-      <form className="register-form" onSubmit={handleRegister}>
+    <div className={styles.registerContainer}>
+      <form className={styles.registerForm} onSubmit={handleRegister}>
         <h2>Criar Conta</h2>
 
-        {erro && <p className="error-message">{erro}</p>}
+        {erro && <p className={styles.errorMessage}>{erro}</p>}
 
         <label htmlFor="nome">Nome</label>
         <input
@@ -85,7 +83,7 @@ function Register() {
 
         <button type="submit">Cadastrar</button>
 
-        <p className="link-text">
+        <p className={styles.linkText}>
           Já tem uma conta? <a href="/login">Entrar</a>
         </p>
       </form>

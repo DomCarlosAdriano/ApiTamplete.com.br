@@ -1,11 +1,11 @@
 import React from "react";
-import "./HeroSection.css";
+import styles from "./HeroSection.module.css";
 import docImage from "../../assets/inicial.webp";
 
 function HeroSection() {
   return (
-    <section className="hero">
-      <div className="hero-content">
+    <section className={styles.hero}>
+      <div className={styles.heroContent}>
         <h1>
           Gere automaticamente PDFs com nossa poderosa API
         </h1>
@@ -15,20 +15,20 @@ function HeroSection() {
           escalável — perfeita para faturas, relatórios e modelos.
         </p>
 
-        <ul className="features-list">
+        <ul className={styles.featuresList}>
           <li>Gere automaticamente banners e imagens</li>
           <li>Integração com Zapier, Make.com, N8n ou API REST</li>
           <li>Já geramos milhões de PDFs e imagens</li>
           <li>Suporte a editor WYSIWYG e templates em HTML</li>
         </ul>
 
-        <button className="cta-button-hero">Cadastre-se agora</button>
-        <p className="note">
+        <button className={styles.ctaButtonHero}>Cadastre-se agora</button>
+        <p className={styles.note}>
           Comece grátis, <strong>sem necessidade de cartão de crédito</strong>
         </p>
       </div>
 
-      <div className="hero-image">
+      <div className={styles.heroImage}>
         <img src={docImage} alt="Document illustration" />
       </div>
     </section>

@@ -1,8 +1,8 @@
-.info-section {
+.infoSection {
   padding: 4rem 1rem;
 }
 
-.info-content {
+.infoContent {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -11,32 +11,31 @@
   flex-wrap: wrap;
 }
 
-.text-content {
+.textContent {
   flex: 1 1 400px;
 }
 
-.image-content {
+.imageContent {
   flex: 1 1 400px;
   display: flex;
   justify-content: center;
   width: 500px;
   height: 450px;
- 
 }
 
-.info-title {
+.infoTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #222;
 }
 
-.info-description {
+.infoDescription {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: #555;
 }
 
-.info-button {
+.infoButton {
   padding: 0.75rem 1.5rem;
   background-color: #007bff;
   border: none;
@@ -47,23 +46,24 @@
   transition: background 0.2s;
 }
 
-.info-button:hover {
+.infoButton:hover {
   background-color: #0056b3;
 }
 
-.info-image {
+.infoImage {
   max-width: 100%;
   border-radius: 10px;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .info-content {
+  .infoContent {
     flex-direction: column;
     text-align: center;
   }
 
-  .text-content, .image-content {
+  .textContent,
+  .imageContent {
     flex: 1 1 100%;
   }
 }

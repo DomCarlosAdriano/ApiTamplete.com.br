@@ -1,20 +1,20 @@
 import React from 'react';
-import './Footer.css';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
         {/* Logo e descrição */}
-        <div className="footer-section">
-          <h2 className="logo">MinhaMarca</h2>
-          <p className="footer-description">
+        <div className={styles.footerSection}>
+          <h2 className={styles.logo}>MinhaMarca</h2>
+          <p className={styles.footerDescription}>
             Soluções inteligentes para seu negócio crescer. Conecte-se com o futuro.
           </p>
         </div>
 
         {/* Links úteis */}
-        <div className="footer-section">
+        <div className={styles.footerSection}>
           <h3>Links Rápidos</h3>
           <ul>
             <li><a href="#">Início</a></li>
@@ -25,9 +25,9 @@ const Footer = () => {
         </div>
 
         {/* Redes sociais */}
-        <div className="footer-section">
+        <div className={styles.footerSection}>
           <h3>Siga-nos</h3>
-          <div className="social-icons">
+          <div className={styles.socialIcons}>
             <a href="#"><i className="fab fa-facebook-f"></i></a>
             <a href="#"><i className="fab fa-instagram"></i></a>
             <a href="#"><i className="fab fa-twitter"></i></a>
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>&copy; {new Date().getFullYear()} MinhaMarca. Todos os direitos reservados.</p>
       </div>
     </footer>

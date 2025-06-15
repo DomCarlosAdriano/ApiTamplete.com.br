@@ -10,56 +10,56 @@
   margin: 0 auto;
 }
 
-.hero-image {
+.heroImage {
   display: flex;
   text-align: center;
   width: fit-content;
 }
 
-.hero-image img {
+.heroImage img {
   width: 30vw;
   height: auto;
   border-radius: 15px;
 }
 
-.hero-content {
+.heroContent {
   flex: 1 1 400px;
   max-width: 600px;
 }
 
-.hero-content h1 {
+.heroContent h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 800;
   line-height: 1.2;
 }
 
-.hero-content p {
+.heroContent p {
   font-size: 1.1rem;
   color: #444;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
-.features-list {
+.featuresList {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
 }
 
-.features-list li {
+.featuresList li {
   margin-bottom: 0.8rem;
   font-size: 1rem;
   display: flex;
   align-items: center;
 }
 
-.features-list li::before {
+.featuresList li::before {
   content: "✅";
   margin-right: 0.6rem;
 }
 
-.cta-button-hero {
+.ctaButtonHero {
   padding: 0.9rem 2rem;
   background-color: #1e90ff;
   color: #fff;
@@ -72,7 +72,7 @@
   transition: background-color 0.3s ease;
 }
 
-.cta-button-hero:hover {
+.ctaButtonHero:hover {
   background-color: #0f78d0;
 }
 
@@ -93,17 +93,17 @@
     padding: 2rem 1rem;
   }
 
-  .hero-content h1 {
+  .heroContent h1 {
     font-size: 2rem;
   }
 
-  .hero-content p,
-  .features-list li,
+  .heroContent p,
+  .featuresList li,
   .note {
     font-size: 1rem;
   }
 
-  .cta-button {
+  .ctaButton {
     width: 100%;
   }
 }

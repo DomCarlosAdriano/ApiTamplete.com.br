@@ -1,29 +1,29 @@
 import React from "react";
-import "./VideoSection.css";
+import styles from "./VideoSection.module.css";
 
 const VideoSection = () => {
   return (
-    <section className="video-section">
-      <div className="content">
-        <div className="text">
-          <h2 className="title">Introdução</h2>
-          <p className="description">
+    <section className={styles.videoSection}>
+      <div className={styles.content}>
+        <div className={styles.text}>
+          <h2 className={styles.title}>Introdução</h2>
+          <p className={styles.description}>
+            Esta é uma descrição breve e direta que explica o valor ou objetivo
+            do vídeo apresentado. Ela deve ser clara, envolvente e relevante.
             Esta é uma descrição breve e direta que explica o valor ou objetivo
             do vídeo apresentado. Ela deve ser clara, envolvente e relevante
-            Esta é uma descrição breve e direta que explica o valor ou objetivo
-            do vídeo apresentado. Ela deve ser clara, envolvente e relevante
-            para o público. para o público. Esta é uma descrição breve e direta
-            que explica o valor ou objetivo do vídeo apresentado. Ela deve ser
-            clara, envolvente e relevante para o público.
+            para o público. Esta é uma descrição breve e direta que explica o
+            valor ou objetivo do vídeo apresentado. Ela deve ser clara,
+            envolvente e relevante para o público.
           </p>
-          <button className="cta-button">Comprar</button>
+          <button className={styles.ctaButton}>Comprar</button>
         </div>
 
-        <div className="video-container">
+        <div className={styles.videoContainer}>
           <iframe
-            className="video"
+            className={styles.video}
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Video de exemplo"
+            title="Vídeo de exemplo"
             allowFullScreen
           />
         </div>
