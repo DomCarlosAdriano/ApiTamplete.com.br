@@ -13,3 +13,5 @@ function PageBase() {
     </>
   )
 }
+
+export default PageBase;

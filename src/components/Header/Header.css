@@ -8,10 +8,11 @@
 header {
   border-bottom: 1px solid #eee;
   width: 100vw;
-  min-height: 5rem;
+  height: 90px;
   display: flex;
-  align-items: center;
+  align-self: center;
   justify-content: center;
+
 }
 
 .container {
@@ -20,7 +21,6 @@ header {
   height: 100%;
   padding: 30px 40px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -36,7 +36,6 @@ header {
 .menu-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: fit-content;
   gap: 50px;
 }
