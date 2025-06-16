@@ -87,6 +87,9 @@
   background-color: var(--primary-color-hover);
 }
 
+.logout{
+  cursor: pointer;
+}
 /*======================
   Ícone Menu Mobile
 =======================*/

@@ -53,9 +53,11 @@ export default function Header() {
           <nav className={styles.nav}>
             {user ? (
               <>
-                <a href="#">Dashboard</a>
-                <a href="#">Meus Templates</a>
-                <a onClick={handleLogout}>Sair</a>
+                <a href="/home">Tamplates</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="#">Conta</a>
+                <a className={styles.logout} onClick={handleLogout} >Sair</a>
               </>
             ) : (
               <>
@@ -83,14 +85,28 @@ export default function Header() {
 
       {/* Menu Mobile */}
       {isOpen && (
-        <div className={styles.mobileMenu}>
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Docs</a>
-          <a href="#">Support</a>
-          <a href="#">Login</a>
-          <button>Cadastre-se Agora</button>
-        </div>
+        <nav className={styles.mobileMenu}>
+           {user ? (
+              <>
+                <a href="/home">Tamplates</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="#">Conta</a>
+                <a className={styles.logout} onClick={handleLogout}>Sair</a>
+              </>
+            ) : (
+              <>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Docs</a>
+                <a href="#">Support</a>
+                <a href="/login">Login</a>
+                <a href="/register" className={styles.getStarted}>
+                  Cadastre-se Agora
+                </a>
+              </>
+            )}
+        </nav>
       )}
     </header>
   );

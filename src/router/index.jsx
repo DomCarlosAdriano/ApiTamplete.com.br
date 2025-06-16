@@ -4,6 +4,7 @@ import PageBase from '../pages/PageBase'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import EditorTamplate from '../pages/EditorTamplate'
 
 
 function AppRoutes() {
@@ -14,8 +15,9 @@ function AppRoutes() {
              <Route index element={<LandingPage />}/>
              <Route path="/home" element={<Home />} />
              <Route path="/login" element={<Login />} />
-             <Route path="/Register" element={<Register />} />
+             <Route path="/register" element={<Register />} />
           </Route>
+          <Route path="/editorTamplate" element={<EditorTamplate/>} />
         </Routes>
       </BrowserRouter>
     )
